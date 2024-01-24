@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+import mongoose from "mongoose";
 
 const dbName = "people-db"
 const db_uri = "mongodb://localhost:27017/" + dbName;
@@ -10,7 +10,6 @@ export const dbConnect = ()=>{
       console.log("Connected to Database: " + dbName);
     }
   } catch (error) {
-    console.log("Error: ", error);
+    console.log("Error:", error);
   }
 }
-
